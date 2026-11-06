@@ -5,4 +5,5 @@ Lec4 : 수식과 연산자<br>
 Lec5 : 조건문<br>
 Lec6 : 반복문<br>
 Lec7 : 배열<br>
-Lec9 : 함수
+Lec9 : 함수<br>
+Lec10 : 포인터
