@@ -26,8 +26,8 @@ int main(void) {
 
 	p = &number;	// p가 number를 가리킴
 
-	printf("address of number = %p\n", &number);	// number의 주소
-	printf("value of pointer = %p\n", p);	// p에 저장된 값 = number의 주소
+	printf("address of number = %u\n", &number);	// number의 주소
+	printf("value of pointer = %u\n", p);	// p에 저장된 값 = number의 주소
 	printf("value of number = %d\n", number);	// 10
 	printf("value pointed to by p = %d\n", *p);	// p가 가리키는 값 = 10
 

@@ -12,9 +12,9 @@
 int main(void) {
 	int a[] = { 10, 20, 30, 40, 50 };
 
-	printf("name of array = %p\n", a);	// 배열 이름
-	printf("address of first element = %p\n", &a[0]);	// 첫 요소의 주소 -> 같음
-	printf("address of second element = %p\n", &a[1]);	// 4 증가
+	printf("name of array = %u\n", a);	// 배열 이름
+	printf("address of first element = %u\n", &a[0]);	// 첫 요소의 주소 -> 같음
+	printf("address of second element = %u\n", &a[1]);	// 4 증가
 
 	return 0;
 }

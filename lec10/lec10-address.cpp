@@ -6,8 +6,8 @@
  - 변수의 크기만큼 메모리 공간을 차지함 : char 1바이트, int 4바이트, float 4바이트 ...
  - & (주소 연산자) : 변수의 주소를 계산하는 연산자   ex) 변수 i의 주소 -> &i
      scanf("%d", &x); 에서 쓰던 그 & 임
- - 주소 출력 : %p (16진수로 출력)
-     교재는 %u 를 쓰지만 64비트 환경에서는 주소가 잘릴 수 있어서 %p 가 정확함
+ - 주소 출력 : 교재처럼 %u 사용 (주소를 부호 없는 정수로 출력)
+     x64 로 빌드하면 경고가 뜰 수 있음 -> 16진수 주소로 보고 싶으면 %p
  - 주소 값은 실행할 때마다 달라질 수 있음
 
 */
@@ -19,9 +19,9 @@ int main(void) {
 	char c = 69;
 	float f = 12.3;
 
-	printf("address of i: %p\n", &i);	// 변수 i의 주소 출력
-	printf("address of c: %p\n", &c);	// 변수 c의 주소 출력
-	printf("address of f: %p\n", &f);	// 변수 f의 주소 출력
+	printf("address of i: %u\n", &i);	// 변수 i의 주소 출력
+	printf("address of c: %u\n", &c);	// 변수 c의 주소 출력
+	printf("address of f: %u\n", &f);	// 변수 f의 주소 출력
 
 	return 0;
 }

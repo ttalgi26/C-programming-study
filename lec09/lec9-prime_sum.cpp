@@ -5,7 +5,7 @@
      i 가 소수이고 n - i 도 소수이면 n = i + (n - i)
  - check_prime() 함수를 한 번 만들어 두고 두 번 호출 -> 함수 없이 쓰면 매우 복잡해짐
  - flag 변수 : 한 번이라도 찾았는지 기록 (0 이면 못 찾음)
- - 교재는 scanf_s 사용 -> 다른 파일들과 맞춰서 scanf 로 작성
+ - scanf_s : 비주얼 스튜디오의 안전한 입력 함수 (정수 입력은 scanf 와 사용법 같음)
 
 */
 
@@ -18,7 +18,7 @@ int main(void) {
 	int n, flag = 0;
 
 	printf("Enter a positive integer: ");
-	scanf("%d", &n);
+	scanf_s("%d", &n);
 
 	for (int i = 2; i < n; i++) {
 		if (check_prime(i) == 1) {	// i 가 소수이고
