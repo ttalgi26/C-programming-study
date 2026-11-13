@@ -6,4 +6,5 @@ Lec05 : 조건문<br>
 Lec06 : 반복문<br>
 Lec07 : 배열<br>
 Lec09 : 함수<br>
-Lec10 : 포인터
+Lec10 : 포인터<br>
+Lec11 : 문자열
