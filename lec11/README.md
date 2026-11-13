@@ -119,7 +119,8 @@ char *p  = "HelloWorld";   // ② 문자열 상수의 주소만 저장
 | ② 문자 포인터 `p` | **불가능** (프로그램 중지) | **가능** (가리키는 주소만 바뀜) |
 
 - 문자열 상수는 **텍스트 세그먼트**(읽기만 가능한 메모리)에 저장됨
-- `.cpp` 파일에서는 `const char *p = "...";` 로 써야 컴파일됨 (교재 `.c` 에서는 `char *p` 가능)
+- 교재처럼 `char *p = "...";` 를 쓰려면 파일이 **`.c`** 여야 함 (`lec11-pointer.c`)
+  - `.cpp` 에서는 에러 C2440 → `const char *p` 로 써야 함
 
 ---
 
@@ -302,7 +303,7 @@ if (③______(solution, answer) == 0) break;
 | `lec11-strcmp.cpp` | `strcmp()` |
 | `lec11-atoi.cpp` | `atoi()`, `sscanf()`, `sprintf()` |
 | `lec11-calc_quiz.cpp` | Lab : 단답형 퀴즈 채점 |
-| `lec11-pointer.cpp` | 문자 배열 vs 문자 포인터 |
+| `lec11-pointer.c` | 문자 배열 vs 문자 포인터 |
 | `lec11-hangman.cpp` | 🔥 **Lab : 행맨 (기말 출제)** (Windows) |
 | `lec11-hangman2.cpp` | 🔥 행맨 도전문제 버전 (Windows) |
 | `lec11-anagram.cpp` | Lab : 단어 애나그램 |
